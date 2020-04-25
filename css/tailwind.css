@@ -18,6 +18,13 @@ hr {
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+.hrwhite{
+    width:100%;
+    margin:2em auto;
+    border: 0;
+    height: 0.1px;
+    background-image: linear-gradient(to right, rgba(250, 249, 249, 1), rgba(250, 249, 249, 0.75), rgba(250, 249, 249, 1));
+}
 .bialykolor {
     height: 25px;
     width: 25px;
@@ -25,14 +32,14 @@ hr {
     border-radius: 50%;
     display: inline-block;
   }
-  .czarnykolor {
+.czarnykolor {
     height: 25px;
     width: 25px;
     background-color: rgb(27, 24, 24);
     border-radius: 50%;
     display: inline-block;
   }
-  .czerwonykolor {
+.czerwonykolor {
     height: 25px;
     width: 25px;
     background-color: rgb(179, 41, 41);
