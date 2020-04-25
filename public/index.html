@@ -1,13 +1,62 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"content ="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <title>Sklep</title>
-        <link rel="stylesheet" href="/build/tailwind.css">
 
-    </head>
-    <body class="bg-gray-300">
-        <h1 class="text-4xl font-bold text-center text-blue-500">Witam</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Sklep</title>
+    <link rel="stylesheet" href="/build/tailwind.css">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,600,700,800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <ul class="flex justify-between hidden">
+        <!-- nawigacja-->
+        <li class="mr-3">
+            <a class="inline-block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white"
+                href="#">Active Pill</a>
+        </li>
+        <li class="mr-3">
+            <a class="inline-block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-2 px-4"
+                href="#">Pill</a>
+        </li>
+        <li class="mr-3">
+            <a class="inline-block py-2 px-4 text-gray-400 cursor-not-allowed" href="#">Disabled Pill</a>
+        </li>
+    </ul>
+    <div class="flex flex-wrap ">
+        <div id="sekcja1" class="w-1/4  h-screen">
+            <h1 id="logo" class="text-2xl pt-10 pl-16"> LOGO.</h1>
+            <h4 class="text-sm pl-16 m-0 p-0">online store</h4>
+            <h2 id="tytul" class="font-bold mt-20 p-16 pb-4 text-xl  ">Bawełniany Tshirt z czerwonym logo premium </h2>
+            <p id="opis" class="p-16 pt-0 pb-0 text-xs">Bacon ipsum dolor amet chicken ball tip hamburger, pork sausage
+                kevin picanha frankfurter shankle fatback pork chop capicola.</p>
+            <p id="cena" class="p-16 pb-0 text-2xl font-bold pt-8">$ 148</p>
+            <p id="rozmiar" class="p-16 text-sm text-gray-500 pt-8 pb-2"> Wybierz rozmiar:</p>
+            <p id="rozmiar" class="p-16  tracking-widest pb-2 pt-0"> XS S M L XL</p>
+            <hr>
+            <p id="kolor" class="p-16 text-sm text-gray-500 pt-0 pb-0"> Wybierz kolor:</p>
+            <div class="p-16 tracking-widest pt-4 pb-8">
+                <span class="bialykolor mr-4"></span>
+                <span class="czarnykolor mr-4"></span>
+                <span class="czerwonykolor mr-4"></span>
+            </div>
+            <button id="btn-koszyk" class="ml-16 pt-2 pb-2 pr-6 pl-6 text-white text-center ">Dodaj do
+                koszyka</button><br>
+            <button id="btn-zapisz" class="ml-16 mt-2 pt-2 pb-2 pr-6 pl-6 text-center ">Zapisz na później</button>
+        </div>
+        <div id="sekcja2" class="     w-1/2 bg-green-300 ">
+            <img src="a1.jpg" class="object-cover h-screen w-full ...">
+        </div>
+        <div id="sekcja3" class="w-1/4 bg-green-800 text-white">
+            <a href="#" class="inline-block text-lg pt-10 pl-16 "> Przejdź do koszyka </a>
+            <a href="#" class="inline-block text-lg pl-6"><i class="fas fa-shopping-basket"></i> </a>
+            <p class="p-16 text-sm text-gray-500 pt-16 pb-8"> Aktualnie masz cztery przedmioty w koszyku:</p>
+        </div>
+
+    </div>
+</body>
+
 </html>

@@ -4,7 +4,8 @@
   "description": "Projekt sklepu internetowego na zaliczenie przedmiotu \"Indywidualny Projekt Programistyczny\". \r Technologie, które będą użyte: MongoDB,Express,Reactjs,Nodejs + (TailwindCSS/Bootstrap4)",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "watch": "postcss css/tailwind.css -o public/build/tailwind.css --watch"
   },
   "repository": {
     "type": "git",
