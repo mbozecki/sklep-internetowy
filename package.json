@@ -1,0 +1,25 @@
+{
+  "name": "sklep-internetowy",
+  "version": "1.0.0",
+  "description": "Projekt sklepu internetowego na zaliczenie przedmiotu \"Indywidualny Projekt Programistyczny\". \r Technologie, które będą użyte: MongoDB,Express,Reactjs,Nodejs + (TailwindCSS/Bootstrap4)",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbozecki/sklep-internetowy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbozecki/sklep-internetowy/issues"
+  },
+  "homepage": "https://github.com/mbozecki/sklep-internetowy#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.3.5"
+  }
+}
