@@ -54,5 +54,23 @@ hr {
 #btn-zapisz {
     border:1px solid #4D4D4D;
 }
+
+#landing {
+    position:flex;
+    background-image:url("/landing/landingWhite1.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    max-height:100%;
+    background-position: left;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:#4D4D4D;
+    color:white;
+    word-spacing: 2em;
+}
 @tailwind components;
 @tailwind utilities;
