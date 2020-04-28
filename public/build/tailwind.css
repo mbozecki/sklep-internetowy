@@ -601,6 +601,10 @@ html {
   scrollbar-width: none;
 }
 
+body {
+  background-color:#F2F2F0;
+}
+
 html::-webkit-scrollbar {
   display: none;
 }
@@ -687,6 +691,23 @@ hr {
   background-color:#4D4D4D;
   color:white;
   word-spacing: 2em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 0px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 00px 0 20px;
+}
+
+.grid-container > div > img {
+  width:100%;
+  height:450px;
 }
 
 .container {
