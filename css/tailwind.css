@@ -74,12 +74,14 @@ hr {
     background-repeat:no-repeat;
     min-height:100%;
     background-position: left;
+
 }
 #landing2{
     background-image:url("/landing/4721.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     min-height:100%;
+
 
 }
 .footer{
