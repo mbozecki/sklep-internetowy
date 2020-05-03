@@ -67,14 +67,23 @@ hr {
 
 }
 
-#landing {
+@media (min-width:640px) { #landing {
 
     background-image:url("/landing/landingWhite1.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     min-height:100%;
     background-position: left;
+    }
+}
+@media (max-width:640px) { #landing {
 
+    background-image:url("/landing/landingWhite1mobile1x.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    min-height:100%;
+
+    }
 }
 #landing2{
     background-image:url("/landing/4721.jpg");
