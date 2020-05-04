@@ -687,10 +687,11 @@ hr {
 }
 
 #landing2{
-  background-image:url("/landing/4721.jpg");
+  background-image:url("/landing/landing2/landing2.png");
   background-size:cover;
   background-repeat:no-repeat;
   min-height:100%;
+  background-position: left;
 }
 
 .footer{
@@ -699,7 +700,7 @@ hr {
   right: 0;
   background-color:#4D4D4D;
   color:white;
-  word-spacing: 2em;
+  word-spacing: 3em;
 }
 
 .grid-container {
