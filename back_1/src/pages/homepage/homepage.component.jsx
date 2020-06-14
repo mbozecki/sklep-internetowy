@@ -6,8 +6,6 @@ const HomePage = () => (
     <div>
         <section id="landing">
         <nav class="bg-transparent sm:px-10 sm:pt-4 flex-wrap pt-10">
-
-<Navbar/>
 </nav>
 <div class="sm:flex">
         <div class="flex-1 bg-transparent "></div>

@@ -11,12 +11,12 @@ const Navbar = () => (
         Strona główna
     </Link>
     <Link class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-semibold text-xs sm:py-3 sm:mr-16"
-        to="/sale">
-        Promocje
+        to="/shop">
+        Sklep
     </Link>
     <Link class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-semibold text-xs sm:py-3 sm:mr-16"
         to="/about">
-        O sklepie
+        O nas
     </Link>
     <Link class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-semibold text-xs sm:py-3 sm:mr-16"
         to="/login">

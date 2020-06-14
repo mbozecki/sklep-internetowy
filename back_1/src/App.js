@@ -7,6 +7,7 @@ import HomePage from './pages/homepage/homepage.component'
 import ShopPage from './pages/shop/shop.component'
 import LoginPage from './pages/loginpage/loginpage.component'
 import {auth} from './firebase/firebase.utils'
+import Navbar from './components/navbar/navbar.component'
 
 class App extends React.Component {
   constructor() {
@@ -29,7 +30,9 @@ class App extends React.Component {
   render(){
     return (
       <div>
+        <Navbar/>
         <Switch>
+          
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component = {ShopPage} />
           <Route path="/login" component ={LoginPage} />

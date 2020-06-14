@@ -19,7 +19,6 @@ class ShopPage extends React.Component {
         return(
             
             <div className='shop-page'>
-                <Navbar/>
                 <div class="sm:mx-16 my-8 flex ">
                 <img alt="baner" style={{height:'auto'}} src={BanerUp} class="shadow-xl"/>
                 </div>
