@@ -1,6 +1,6 @@
 import React from 'react'
 import './sign-in.styles.scss'
-import {signInWithGoogle} from '../../firebase/firebase.utils'
+import {auth, signInWithGoogle} from '../../firebase/firebase.utils'
 
 class SignIn extends React.Component{
     constructor(props) {
@@ -13,9 +13,15 @@ class SignIn extends React.Component{
         
     }
 
-    handleSubmit= event =>{
+    handleSubmit= async event =>{
         event.preventDefault();
-
+        const {email, password}= this.state;
+        try {
+            await auth.signInWithEmailAndPassword(email,password);
+            this.setState({email:'',password:''});
+        } catch (err){
+            console.log(err)
+        }
         this.setState({email: '', password: ''})
     }
 
@@ -31,7 +37,7 @@ class SignIn extends React.Component{
 
                         <div class="container mx-auto p-8">
                             <div class="mx-auto max-w-sm">
-                                <div class="py-10 text-center text-6xl">
+                                <div class="py-6 text-center text-6xl">
                                     LOGO.
                                 </div>
                                 <div class="bg-white rounded shadow">

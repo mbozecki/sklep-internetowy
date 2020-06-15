@@ -13,6 +13,34 @@
     measurementId: "G-M7CNFK98NE"
   };
 
+  export const createUserProfileDocument= async (userAuth, additionalData) => {
+    if (!userAuth) return;
+
+    const userRef= firestore.doc(`/users/${userAuth.uid}`); //miejsce przechowywania danych uzytkownika
+    const snapShot= await userRef.get();
+
+    if (!snapShot.exists) { // czy sa juz jakies dane uzytkownika? jezeli nie to tworzy nowego
+      const {displayName,email}= userAuth;
+      const createdAt= new Date();
+
+      try {
+        await userRef.set(
+        {
+          displayName,
+          email,
+          createdAt,
+          ...additionalData
+        })
+      }
+
+      catch (err){
+        console.log("blad w tworzeniu uzytkownika",err.message);
+      }
+    }
+
+  return userRef;
+  }
+
   firebase.initializeApp(config);
 
   export const auth= firebase.auth();

@@ -1,7 +1,6 @@
 import React from 'react'
 import SHOP_DATA from './shop.data'
 import PreviewCollection from '../../components/preview-collection/preview-collection.component'
-import Navbar from '../../components/navbar/navbar.component'
 import BanerUp from '../shop/Web1.png';
 import SearchSection from '../../components/shop-searchsection/shop-searchsection.component'
 

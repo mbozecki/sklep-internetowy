@@ -1,6 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-const Navbar = () => (
+import {auth} from '../../firebase/firebase.utils'
+
+const Navbar = ({currentUser}) => ( //navbar zajmuje sie tez trzymaniem stanu uzykownika, tzn czy jest zalogowany
     <div className='Navbar'>
         <nav class="bg-transparent sm:px-10 sm:pt-4 flex-wrap pt-10">
 
@@ -18,10 +20,16 @@ const Navbar = () => (
         to="/about">
         O nas
     </Link>
-    <Link class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-semibold text-xs sm:py-3 sm:mr-16"
+    {
+        currentUser ?
+        <div onClick={()=> auth.signOut()} class="cursor-pointer no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-semibold text-xs sm:py-3 sm:mr-16" >Wyloguj się</div>
+        :
+        <Link class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-semibold text-xs sm:py-3 sm:mr-16"
         to="/login">
         Zaloguj się
     </Link>
+    }
+    
 </div>
 
 </nav>

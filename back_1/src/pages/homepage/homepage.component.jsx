@@ -1,7 +1,6 @@
 import React from 'react'
 import './homepage.styles.scss'
-import '../../components/navbar/navbar.component'
-import Navbar from '../../components/navbar/navbar.component'
+
 const HomePage = () => (
     <div>
         <section id="landing">
