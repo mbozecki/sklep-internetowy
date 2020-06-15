@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {auth} from '../../firebase/firebase.utils'
+import {connect} from 'react-redux'
 
 const Navbar = ({currentUser}) => ( //navbar zajmuje sie tez trzymaniem stanu uzykownika, tzn czy jest zalogowany
     <div className='Navbar'>
@@ -36,4 +37,7 @@ const Navbar = ({currentUser}) => ( //navbar zajmuje sie tez trzymaniem stanu uz
     </div>
 );
 
-export default Navbar;
+const mapStateToProps= state => ({
+    currentUser: state.user.currentUser
+})
+export default connect(mapStateToProps) (Navbar);
