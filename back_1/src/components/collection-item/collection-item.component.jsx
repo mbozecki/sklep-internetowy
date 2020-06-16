@@ -8,7 +8,7 @@ import {connect} from 'react-redux' //do koszyka
 import {addItem} from '../../redux/cart/cart.actions'
 
 const CollectionItem = ({item, addItem}) => {
-    const {name, price, imageUrl} =  item; //destrukturyzacja z item na wartosci, potemmoze tu byc id
+    const {name, price, imageUrl} =  item; //destrukturyzacja z item na wartosci, potem moze tu byc id
     return (
     <div className="collection-item" class="item shadow-sm border-gray-300  border-2 mt-4" >
                <div class="absolute justify-center mt-64 ml-24 ">

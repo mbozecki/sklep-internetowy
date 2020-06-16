@@ -12,15 +12,7 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-html {
-  font-family: 'Manrope', sans-serif;
-  -ms-overflow-style: none;
-  scrollbar-width: none;  
 
-}
-body {
-  background-color:#F2F2F0;
-}
 /* Sections
    ========================================================================== */
 

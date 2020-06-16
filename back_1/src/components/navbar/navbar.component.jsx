@@ -2,11 +2,16 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {auth} from '../../firebase/firebase.utils'
 import {connect} from 'react-redux'
+import {createStructure, createStructuredSelector} from 'reselect'
+
 import CartIcon from '../cart-icon/cart-icon.component'
 import CartDropdown from '../cart-dropdown/cart-dropdown.component'
 
+import {selectCartHidden} from '../../redux/cart/cart.selectors'
+import {selectCurrentUser} from '../../redux/user/user.selectors'
+
 const Navbar = ({currentUser, hidden}) => ( //navbar zajmuje sie tez trzymaniem stanu uzykownika, tzn czy jest zalogowany
-    <div className='Navbar'>
+    <div className='Navbar' >
         <nav class="bg-transparent sm:px-10 sm:pt-4 flex-wrap pt-10">
 
 <div class="-mb-px flex-col sm:flex-row flex justify-between text-center">
@@ -42,9 +47,9 @@ const Navbar = ({currentUser, hidden}) => ( //navbar zajmuje sie tez trzymaniem 
     </div>
 );
 
-const mapStateToProps= ({user: {currentUser}, cart: {hidden}}) => ({
-    currentUser,
-    hidden
+const mapStateToProps = createStructuredSelector({ //struktura w celu zmniejszenia liczby kodu
+    currentUser:selectCurrentUser,
+    hidden: selectCartHidden
     //currentUser: state.user.currentUser
 })
 export default connect(mapStateToProps) (Navbar);

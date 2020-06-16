@@ -1,0 +1,68 @@
+html {
+    font-family: 'Manrope', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+ 
+}
+body {
+    background-color:#F2F2F0;
+}
+html::-webkit-scrollbar { 
+        display: none; 
+}
+#sekcja1{
+   background-color: #F2F2F0;
+}
+#sekcja2{
+    background-color: #DBDCDB;
+ }
+#sekcja3{
+    background-color: #4D4D4D;
+
+
+}
+hr {
+    width:80%;
+    margin:1em auto;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.hrwhite{
+    width:100%;
+    margin:2em auto;
+    border: 0;
+    height: 0.1px;
+    background-image: linear-gradient(to right, rgba(250, 249, 249, 1), rgba(250, 249, 249, 0.75), rgba(250, 249, 249, 1));
+}
+.bialykolor {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 251, 251);
+    border-radius: 50%;
+    display: inline-block;
+  }
+.czarnykolor {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(27, 24, 24);
+    border-radius: 50%;
+    display: inline-block;
+  }
+.czerwonykolor {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(179, 41, 41);
+    border-radius: 50%;
+    display: inline-block;
+  }
+#btn-koszyk {
+    background-color:#4D4D4D;
+    border: 1px solid white;
+
+}
+
+#btn-zapisz {
+    border:1px solid #4D4D4D;
+
+}
