@@ -3,7 +3,7 @@
     background-image:url("../../obrazy/landing/landingWhite1.jpg");
     background-size:cover;
     background-repeat:no-repeat;
-    min-height:100vh;
+    min-height:92vh;
     background-position: left;
     }
 }
@@ -11,8 +11,13 @@
 
     background-image:url("../../obrazy/landing/landingWhite1mobile1.png");
     background-size:cover;
+    
     background-repeat:no-repeat;
     min-height:100vh;
+
+    }
+    .footer{
+        min-width: fit-content;
 
     }
 }
@@ -24,4 +29,16 @@
     background-position: left;
 
 
+}
+#btn-zapisz {
+    border:1px solid #4D4D4D;
+
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color:#4D4D4D;
+    color:white;
+    word-spacing: 3em;
 }

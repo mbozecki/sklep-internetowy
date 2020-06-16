@@ -65,8 +65,8 @@ class SignIn extends React.Component{
 
                                 <div class="border-t px-10 py-6">
                                     <div class="flex justify-between">
-                                        <a href="#" class="font-bold text-primary hover:text-primary-dark no-underline">Nie masz konta?</a>
-                                        <a href="#" class="text-grey-darkest ">Zapomniałem hasła</a>
+                                        <a href="/register" class="font-bold text-primary hover:text-primary-dark no-underline">Nie masz konta?</a>
+                                        <a href="/" class="text-grey-darkest ">Zapomniałem hasła</a>
                                     </div>
                                 </div>
                             </div>

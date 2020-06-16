@@ -16,7 +16,7 @@ class SignUp extends React.Component {
         event.preventDefault(); //zapobiega domyslnemu dzialaniu funkcji
         const {displayName,email,password,confirmPassword}=this.state
 
-        if (password!=confirmPassword){
+        if (password!==confirmPassword){
             alert("Hasła nie zgadzają się")
             return;
         }
