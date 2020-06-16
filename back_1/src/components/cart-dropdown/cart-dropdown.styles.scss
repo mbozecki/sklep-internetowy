@@ -12,7 +12,7 @@
     z-index: 5;
   
     .cart-items {
-      height: 280px;
+      height: 240px;
       display: flex;
       flex-direction: column;
       overflow: scroll;
@@ -20,14 +20,10 @@
   
     button {
       margin-top: auto;
+      margin-top: auto;
       color:white;
       background-color:#4D4D4D;
       border: 1px solid;
       padding:12px;
     }
-    ::-webkit-scrollbar {
-        width: 0px;  /* usuniecie widocznosci scrolla */
-        background: transparent;  /* i jako przezroczysty */
-    }
   }
-  
