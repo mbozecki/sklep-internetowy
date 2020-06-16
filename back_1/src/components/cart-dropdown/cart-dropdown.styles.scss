@@ -25,5 +25,9 @@
       border: 1px solid;
       padding:12px;
     }
+    ::-webkit-scrollbar {
+        width: 0px;  /* usuniecie widocznosci scrolla */
+        background: transparent;  /* i jako przezroczysty */
+    }
   }
   

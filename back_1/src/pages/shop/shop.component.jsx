@@ -24,11 +24,14 @@ class ShopPage extends React.Component {
 
                 <div class="flex sm:flex-row flex-col sm:px-16 m-auto ">
                     <SearchSection/>
+                    <div class="sm:w-4/5 mt-4 sm:mt-0 sm:px-0 px-4">
+                    <div class="grid-container font-light ">
                     {
                 collections.map(({id, ...otherCollectionProps} )=>(
                     <PreviewCollection key={id} {...otherCollectionProps} />
                 ))
                 }
+                </div></div>
                 </div>
                 
             </div>
