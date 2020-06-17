@@ -8,6 +8,7 @@ import {connect} from 'react-redux'
 import {createStructuredSelector} from 'reselect';
 import {selectCartItems, selectCartTotal} from '../../redux/cart/cart.selectors'
 import CheckoutItem from '../../components/checkout-item/checkout-item.component'
+import StripePay from '../../components/stripe-pay/stripe-pay.component'
 
 const CheckoutPage = ({cartItems, total}) => (
     <div className='checkout-page'>
@@ -57,9 +58,11 @@ const CheckoutPage = ({cartItems, total}) => (
                     </div>
                 </div>
                 <hr class="hrwhite" />
-                <button id="btn-koszyk" class="text-center  pt-0 sm:pt-16 p-16 my-12">
-                    Przejdź do płatności
-                </button><br/>
+                <div class="text-center mt-16">
+                    <StripePay price={total+12}/>
+                </div>
+                
+                
             </div>
 
         </div>
